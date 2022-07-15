@@ -21,10 +21,26 @@
                 </li>
             </ul>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="container">
+            <figure class="text-center fs-1">
+                Google
+            </figure>
+            <div class="container w-50">
+                <form action="https://www.google.com/search" id="search">
+                    <input class="form-control mb-3 rounded-pill" type="text" name="q">
+                </form>
+            </div>
+        </div>
+        <div class="container w-25">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <input class="btn btn-primary" type="submit" value="Google Search" form="search">
+                </div>
+                <div class="col-4">
+                    <input class="btn btn-primary" type="submit" value="I'm feeling lucky" name="btnI" form="search">
+                </div>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
