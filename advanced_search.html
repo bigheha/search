@@ -3,22 +3,115 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Advanced Search</title>
+        <style>
+            #ltext {
+                font-size: 13px;
+            }
+            #btext {
+                font-size: 20px;
+            }
+        </style>
+        <link href="favicon.ico" rel="icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
         <div class="container-fluid">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Google search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="image_search.html">Image search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="advanced_search.html">Advanced search</a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li>
+                            <a class="nav-link" href="index.html" id="btext"><span class="text-primary">G</span><span class="text-danger">o</span><span class="text-warning">o</span><span>g</span><span class="text-success">l</span><span class="text-danger">e</span></a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Google search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="image_search.html">Image search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="advanced_search.html">Advanced search</a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div>
+            <span class="text-danger h4 m-5 ">Advanced search</span>
+        </div>
+        
+        <div class="border-bottom m-3"></div>    
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <span class="px-4 h6">Find pages that include...</span>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-2 px-0 text-black-50 h6">
+                    how to do that in search field?
+                </div>
+            </div>
+            <form action="https://www.google.com/search" method="get">
+                <div class="row my-3">
+                    <div class="col-2">
+                        <label class="px-4 pt-1" for="1">Include these words: </label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="1" name="as_q">
+                    </div>
+                    <div class="col-2 pt-2 text-black-50" id="ltext">
+                        input important words: apple pie
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label class="px-4 pt-1" for="2">exact word or phrase:</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="2" name="as_epq">
+                    </div>
+                    <div class="col-2 pt-2 text-black-50" id="ltext">
+                        input exact words: "apple pie"
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label  class="px-4 pt-1" for="3">any of these words:</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="3" name="as_oq">
+                    </div>
+                    <div class="col-2 text-black-50" id="ltext">
+                        Input OR between all required words
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label class="px-4 pt-1" for="4">none of these words:</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="4" name="as_eq">
+                    </div>
+                    <div class="col-2 text-black-50" id="ltext">
+                        Print substraction sign before unwanted words: -blueberry, -"raspberry"
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mx-5 px-5">
+                        <div class="col-2 offset-4 gx-5">
+                            <input class="btn btn-primary" type="submit" value="Advanced Search">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
